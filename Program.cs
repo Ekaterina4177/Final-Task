@@ -14,7 +14,7 @@ Console.Clear();
 Console.WriteLine("Программа, формирующая новый массив из имеющихся строк, которые меньше 3х символов.");
 string[] arr = new string[] { "1234", "1567", "-2", "computer science" };
 Console.WriteLine("Заданный массив: ");
-for(int i =0; i < arr.Length; i++)
+for (int i = 0; i < arr.Length; i++)
 {
     Console.Write($"{arr[i]} ");
 }
