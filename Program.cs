@@ -11,25 +11,20 @@
 [“Russia”, “Denmark”, “Kazan”] → [] */
 
 Console.Clear();
-Console.Write("Введите длину массива: ");
-int length = Convert.ToInt32(Console.ReadLine());
-int[] arr = new int[length];
-Console.WriteLine("Полученный массив: ");
-for (int i = 0; i < length; i++)
+Console.WriteLine("Программа, формирующая новый массив из имеющихся строк, которые меньше 3х символов.");
+string[] arr = new string[] { "1234", "1567", "-2", "computer science" };
+Console.WriteLine("Заданный массив: ");
+for(int i =0; i < arr.Length; i++)
 {
-    arr[i] = new Random().Next(10, 3000);
     Console.Write($"{arr[i]} ");
 }
 Console.WriteLine();
-Console.WriteLine("Отсортированный массив: ");
-for (int i = 0; i < length; i++)
+Console.WriteLine("Отсортированный массив со значениями меньше 3х симоволов:");
+for (int i = 0; i < arr.Length; i++)
 {
-    if (arr[i] <= 999)
+    if (arr[i].Length <= 3)
     {
         Console.Write($"{arr[i]} ");
     }
-    else
-    {
-        arr[i] = arr[i];
-    }
 }
+
